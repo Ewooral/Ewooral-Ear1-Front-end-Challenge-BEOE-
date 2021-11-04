@@ -38,12 +38,11 @@ header {
   display: -ms-flex;
   display: -o-flex;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 50px;
 }
-header a img {
-  display: flex;
-  justify-content: flex-end;
-}
+
 header nav {
   display: flex;
   justify-content: flex-end;
@@ -58,4 +57,12 @@ nav li a {
 nav ul {
   display: flex;
   gap: 20px;
+}
+.hero-bold-text-section {
+ 
+  font-size: 100px;
+  line-height: 94.6%;
+  text-align: center;
+  letter-spacing: -0.06em;
+  color: #ffffff;
 }
