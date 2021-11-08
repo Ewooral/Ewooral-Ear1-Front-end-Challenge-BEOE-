@@ -14,19 +14,22 @@ body {
   font-family: DM Sans;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
+
 .Rectangle {
   position: relative;
   width: 100%;
-  height: 1407px;
+  height: 1240px;
   left: 0px;
   top: 0px;
   background-image: url(../assets/img/Rectangle.png);
+  background-size: cover;
 }
 .Rectangle-9 {
   position: absolute;
   width: 100%;
-  height: 1407px;
+  height: 1240px;
   left: 0px;
   top: 0px;
   background: url(../assets/img/Rectangle\ 9.svg) no-repeat top left;
@@ -41,6 +44,8 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px 50px;
+  transition: all 0.9s ease-in;
+  background: #0000001a;
 }
 
 header nav {
@@ -59,10 +64,114 @@ nav ul {
   gap: 20px;
 }
 .hero-bold-text-section {
- 
   font-size: 100px;
   line-height: 94.6%;
   text-align: center;
   letter-spacing: -0.06em;
   color: #ffffff;
+  margin: 3rem;
+}
+.Rectangle small {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  text-align: center;
+  color: #ffffff;
+  opacity: 0.9;
+}
+.hero-section-img {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+.hero-section-img2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.black-matte-3 img {
+  width: 1400px;
+  margin-left: -34px;
+  padding: 13px;
+}
+
+
+
+/* EXTRA SMALL SCREENS */
+@media screen and (max-width: 767px) {
+  header {
+    flex-direction: column;
+  }
+  .hero-section-img {
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero-bold-text-section {
+    font-size: 70px;
+  }
+  .Rectangle small {
+    font-size: 15px;
+  }
+  .black-matte-3 img {
+    width: 900px;
+    margin-left: -34px;
+    padding: 30px;
+    margin-top: 110px;
+  }
+  .Rectangle {
+    height: 1242px;
+  }
+  .Rectangle-9 {
+    height: 1242px;
+  }
+  .about-section p,
+  h1,
+  blockquote {
+    padding: 2rem;
+    width: 90%;
+  }
+  .fans-section {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    /* height: auto; */
+    padding: 3rem;
+  }
+  .fans-section-img {
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    display: flex;
+    height: 32px;
+    width: 32px;
+    margin-top: 100px;
+  }
+  .fans-section h4 {
+    margin-left: 50px;
+  }
+}
+/* SMALL DEVICES/TABLETS */
+@media (min-width: 768px) and (max-width: 991px) {
+  .black-matte-3 img {
+    width: 950px;
+    margin-left: -34px;
+    padding: 40px;
+    margin-top: 167px;
+  }
+  .fans-section-img {
+    margin-top: -20px;
+  }
+}
+
+/* TABLETS/DESKTOPS */
+@media (min-width: 992px) and (max-width: 1200px) {
+  .black-matte-3 img {
+    width: 1250px;
+    margin-left: -34px;
+    padding: 40px;
+    margin-top: 57px;
+  }
 }
