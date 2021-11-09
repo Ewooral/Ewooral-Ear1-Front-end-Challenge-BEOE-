@@ -146,8 +146,11 @@
   background: #ffffff;
   padding: 1rem;
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   color: #0009;
+}
+.boxes5 a{
+
 }
 .boxes1 embed {
   position: relative;
@@ -426,6 +429,7 @@ input[type="text"] {
   bottom: 35rem;
   padding: 2rem;
   display: flex;
+  overflow:auto;
   gap: 2rem;
   /* background: #454545; */
   background-image: url(../assets/img/Fan\ 2\ background.png);
