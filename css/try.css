@@ -142,11 +142,11 @@
   display: flex;
   justify-content: start;
 }
+/* BOXES 5 !IMPORTANT */
 .boxes5 {
   background: #ffffff;
   padding: 1rem;
   display: flex;
-  /* flex-direction: column; */
   color: #0009;
   align-items: center;
   gap: 0.5rem;
